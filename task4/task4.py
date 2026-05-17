@@ -3,20 +3,15 @@ import json
 def lambda_handler(event, context):
 
     params = event.get("queryStringParameters") or {}
-
-    # 1. Get values
     a = params.get("a")
     b = params.get("b")
     operation = params.get("operation")
 
-    # 2. Validate input
     if a is None or b is None or operation is None:
         return {
             "statusCode": 400,
             "body": json.dumps({"error": "Missing parameters"})
         }
-
-    # 3. Convert to numbers
     try:
         a = float(a)
         b = float(b)
@@ -26,7 +21,6 @@ def lambda_handler(event, context):
             "body": json.dumps({"error": "a and b must be numbers"})
         }
 
-    # 4. Do calculation
     if operation == "add":
         result = a + b
     elif operation == "subtract":
@@ -46,7 +40,6 @@ def lambda_handler(event, context):
             "body": json.dumps({"error": "Invalid operation"})
         }
 
-    # 5. Response
     response = {
         "a": a,
         "b": b,

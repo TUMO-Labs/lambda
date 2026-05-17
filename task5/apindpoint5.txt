@@ -1,0 +1,1 @@
+https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task5?min=1&max=100
