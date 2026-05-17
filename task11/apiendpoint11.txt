@@ -1,0 +1,1 @@
+curl -X DELETE https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task11/message1.json
