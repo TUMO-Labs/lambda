@@ -1,0 +1,17 @@
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_personal
+  IdentitiesOnly yes
+# My Biography deploy key
+Host github-my_Biography
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/my_Biography_deploy_key
+    IdentitiesOnly yes
+# Personal GitHub key
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
+    IdentitiesOnly yes
