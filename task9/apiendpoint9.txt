@@ -1,3 +1,3 @@
-curl -X POST "https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task9" \
+curl -X POST "https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/save" \
   -H "Content-Type: application/json" \
   -d '{"filename":"message1.json","name":"Ani","message":"Hello from API"}'

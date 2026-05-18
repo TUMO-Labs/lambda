@@ -1,6 +1,6 @@
-create note:
+POST:
 
-curl -X POST https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task12 \
+curl -X POST https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/notes \
 -H "Content-Type: application/json" \
 -d '{
   "noteId": "note1",
@@ -8,11 +8,11 @@ curl -X POST https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/tas
 }'
 
 
-get note:
+GET:
 
-curl https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task12/note1
+https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/notes/note1
 
 
-delete note:
+DELETE:
 
-curl -X DELETE https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task12/note1
+curl -X DELETE https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/notes/note1

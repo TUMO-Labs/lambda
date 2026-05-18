@@ -1,1 +1,1 @@
-https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/task1
+https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/hey
