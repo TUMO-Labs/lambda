@@ -1,0 +1,14 @@
+POST:
+
+curl -X POST https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/weather \
+-H "Content-Type: application/json" \
+-d '{
+  "city": "Yerevan",
+  "temperature": 31,
+  "humidity": 40
+}'
+
+
+GET:
+
+https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/weather/yerevan

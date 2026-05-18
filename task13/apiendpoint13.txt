@@ -1,0 +1,20 @@
+POST:
+
+curl -X POST https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/students \
+-H "Content-Type: application/json" \
+-d '{
+  "studentId": "student1",
+  "name": "Aram",
+  "age": 16,
+  "course": "IoT"
+}'
+
+
+GET:
+
+curl https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/students/student1
+
+
+DELETE:
+
+curl -X DELETE https://sx09ju1xzf.execute-api.eu-north-1.amazonaws.com/default/students/student1
